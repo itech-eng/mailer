@@ -12,8 +12,8 @@ Here is how to use [gomail](https://github.com/go-gomail/gomail) to send emails
 
 ```go
 import (
-	"github.com/qor/mailer"
-	"github.com/qor/mailer/gomailer"
+	"github.com/itech-eng/mailer"
+	"github.com/itech-eng/mailer/gomailer"
 	"github.com/go-gomail/gomail"
 )
 
@@ -48,7 +48,7 @@ func main() {
 
 ### Sending Emails with templates
 
-Mailer is using [Render](github.com/qor/render) to render email templates and layouts, please refer it for How-To.
+Mailer is using [Render](github.com/itech-eng/render) to render email templates and layouts, please refer it for How-To.
 
 Emails could have HTML and text version, when sending emails,
 
@@ -72,7 +72,7 @@ Mailer.Send(
 All templates and layouts should be located in `app/views/mailers`, but you could change or register more paths by customizing Mailer's AssetFS.
 
 ```go
-import "github.com/qor/assetfs"
+import "github.com/itech-eng/assetfs"
 
 func main() {
 	assetFS := assetfs.AssetFS().NameSpace("mailer")

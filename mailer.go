@@ -1,8 +1,8 @@
 package mailer
 
 import (
-	"github.com/qor/assetfs"
-	"github.com/qor/render"
+	"github.com/itech-eng/assetfs"
+	"github.com/itech-eng/render"
 )
 
 // SenderInterface sender's interface
